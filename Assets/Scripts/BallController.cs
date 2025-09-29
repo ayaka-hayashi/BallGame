@@ -8,6 +8,8 @@ public class BallController : MonoBehaviour
     public float x = 0;
     public float y = 0;
     public float z = 0;
+
+    
     void Update()
     {
         if (Input.GetButtonDown("Fire1")) Shot();
@@ -17,7 +19,8 @@ public class BallController : MonoBehaviour
         GameObject Ball = Instantiate(
             BallPrefab, new Vector3(x, y, z), Quaternion.identity
         );
-        
+
     }
+   
     
 }

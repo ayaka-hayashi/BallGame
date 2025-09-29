@@ -4,12 +4,12 @@ using TMPro;
 public class PinManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
-
-    int point = 0;
+    
+    public int point = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        Debug.Log(scoreText.text);
     }
 
     // Update is called once per frame
@@ -21,16 +21,9 @@ public class PinManager : MonoBehaviour
 
     public int Point()
     {
+        
         return point;
     }
 
-    void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-
-        if (hit.gameObject.tag == "ball")
-        {
-            point++;
-            //Destroy(hit.gameObject);
-        }
-    }
+   
 }
