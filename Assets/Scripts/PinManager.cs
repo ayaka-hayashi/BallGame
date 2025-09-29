@@ -30,7 +30,7 @@ public class PinManager : MonoBehaviour
         if (hit.gameObject.tag == "ball")
         {
             point++;
-            Destroy(hit.gameObject);
+            //Destroy(hit.gameObject);
         }
     }
 }
